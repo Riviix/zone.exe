@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riviix - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-modal">
+            <div class="loading-header">
+                <div class="loading-icon">
+                    <div class="icon-square icon-square-1"></div>
+                    <div class="icon-square icon-square-2"></div>
+                </div>
+                <h1 class="loading-title">Cargando...</h1>
+            </div>
+            <div class="loading-content">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="loading-message">Tu experiencia está siendo preparada. Esto puede tomar unos momentos.</p>
+                <p class="estimated-time">Tiempo estimado: 3 segundos</p>
+                <div class="note-box">
+                    <p class="note-title">Nota:</p>
+                    <p class="note-text">No actualices la página. Serás redirigido automáticamente.</p>
+                </div>
+            </div>
+        </div>
+        <div class="brand-text">
+            <h2>Riviix</h2>
+            <p>Desarrollador Full Stack</p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="main-content hidden">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>Riviix</h2>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Inicio</a>
+                <a href="#about" class="nav-link">Sobre mí</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Proyectos</a>
+                <a href="#contact" class="nav-link">Contacto</a>
+                <a href="games.html" class="nav-link">Área de Juegos</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Primero <span class="highlight">Riviix</span></h1>
+                <p class="hero-subtitle">Desarrollador Full Stack especializado en tecnologías modernas</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">Ver Proyectos</button>
+                    <button class="btn btn-secondary">Descargar CV</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="window-controls">
+                            <span class="control red"></span>
+                            <span class="control yellow"></span>
+                            <span class="control green"></span>
+                        </div>
+                        <span class="window-title">riviix@portfolio:~$</span>
+                    </div>
+                    <div class="code-content">
+                        <div class="code-line">
+                            <span class="code-keyword">const</span> 
+                            <span class="code-variable">developer</span> 
+                            <span class="code-operator">=</span> 
+                            <span class="code-string">"Riviix"</span><span class="code-semicolon">;</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-keyword">const</span> 
+                            <span class="code-variable">skills</span> 
+                            <span class="code-operator">=</span> 
+                            <span class="code-bracket">[</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"C++"</span><span class="code-comma">,</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"JavaScript"</span><span class="code-comma">,</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"HTML/CSS"</span><span class="code-comma">,</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"PHP"</span><span class="code-comma">,</span>
+                        </div>
+                        <div class="code-line indent">
+                            <span class="code-string">"SQL"</span>
+                        </div>
+                        <div class="code-line">
+                            <span class="code-bracket">]</span><span class="code-semicolon">;</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Sobre Mí</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Soy un desarrollador apasionado por crear soluciones innovadoras y eficientes. Con experiencia en múltiples tecnologías, me especializo en el desarrollo de aplicaciones web y software de alto rendimiento.</p>
+                        <p>Mi enfoque se centra en escribir código limpio, escalable y mantenible, siempre buscando las mejores prácticas y las tecnologías más actuales del mercado.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>3+</h3>
+                            <p>Años de experiencia</p>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Proyectos completados</p>
+                        </div>
+                        <div class="stat">
+                            <h3>10+</h3>
+                            <p>Tecnologías dominadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">C++</div>
+                        <h3>C++</h3>
+                        <p>Desarrollo de aplicaciones de alto rendimiento y sistemas embebidos</p>
+                        <div class="skill-level">
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">JS</div>
+                        <h3>JavaScript</h3>
+                        <p>Desarrollo frontend y backend con frameworks modernos</p>
+                        <div class="skill-level">
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                            <span>85%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">HTML</div>
+                        <h3>HTML/CSS</h3>
+                        <p>Diseño responsivo y interfaces de usuario modernas</p>
+                        <div class="skill-level">
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                            <span>95%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">PHP</div>
+                        <h3>PHP</h3>
+                        <p>Desarrollo de aplicaciones web dinámicas y APIs</p>
+                        <div class="skill-level">
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                            <span>80%</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">SQL</div>
+                        <h3>SQL</h3>
+                        <p>Diseño y optimización de bases de datos relacionales</p>
+                        <div class="skill-level">
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                            <span>88%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Proyectos Destacados</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span>Proyecto C++</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sistema de Gestión</h3>
+                            <p>Aplicación de escritorio desarrollada en C++ para gestión de inventario con interfaz gráfica moderna.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">C++</span>
+                                <span class="tech-tag">Qt</span>
+                                <span class="tech-tag">SQLite</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span>Web App</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>Plataforma de comercio electrónico completa con carrito de compras, pagos y panel administrativo.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">PHP</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <span>Portfolio</span>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Personal</h3>
+                            <p>Portfolio interactivo con diseño moderno, animaciones suaves y diseño completamente responsivo.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contacto</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>¿Tienes un proyecto en mente?</h3>
+                        <p>Estoy disponible para colaborar en proyectos interesantes. ¡Hablemos!</p>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <span class="contact-icon">📧</span>
+                                <span>riviix@email.com</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon">💼</span>
+                                <span>LinkedIn: /in/riviix</span>
+                            </div>
+                            <div class="contact-method">
+                                <span class="contact-icon">🐙</span>
+                                <span>GitHub: /riviix</span>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Tu email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Riviix. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

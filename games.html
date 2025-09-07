@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Juegos - Riviix</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html">
+                <h2>Riviix</h2>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <a href="index.html#about" class="nav-link">Sobre mí</a>
+            <a href="index.html#skills" class="nav-link">Habilidades</a>
+            <a href="index.html#projects" class="nav-link">Proyectos</a>
+            <a href="index.html#contact" class="nav-link">Contacto</a>
+            <a href="games.html" class="nav-link active">Área de Juegos</a>
+        </div>
+    </nav>
+
+    <!-- Games Hero Section -->
+    <section class="games-hero">
+        <div class="container">
+            <h1 class="games-hero-title">🎮 Área de <span class="highlight">Juegos</span></h1>
+            <p class="games-hero-subtitle">Diviértete con nuestros juegos interactivos y creativos</p>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section class="games">
+        <div class="container">
+            <div class="games-grid">
+                <div class="game-card" data-game="paint">
+                    <div class="game-icon">🎨</div>
+                    <h3>Paint Digital</h3>
+                    <p>Dibuja y crea arte digital con herramientas profesionales. Efectos de neón incluidos.</p>
+                    <div class="game-features">
+                        <span class="feature-tag">Pincel ajustable</span>
+                        <span class="feature-tag">Efectos neón</span>
+                        <span class="feature-tag">Guardar PNG</span>
+                    </div>
+                    <button class="btn btn-primary game-launch-btn">Jugar Ahora</button>
+                </div>
+                
+                <div class="game-card" data-game="snake">
+                    <div class="game-icon">🐍</div>
+                    <h3>Snake Game</h3>
+                    <p>El clásico juego de la serpiente con efectos visuales modernos y controles suaves.</p>
+                    <div class="game-features">
+                        <span class="feature-tag">Controles WASD</span>
+                        <span class="feature-tag">Efectos visuales</span>
+                        <span class="feature-tag">Puntuación</span>
+                    </div>
+                    <button class="btn btn-primary game-launch-btn">Jugar Ahora</button>
+                </div>
+                
+                <div class="game-card" data-game="chess">
+                    <div class="game-icon">♟️</div>
+                    <h3>Chess Game</h3>
+                    <p>Ajedrez clásico con efectos visuales modernos, IA inteligente y análisis de jugadas.</p>
+                    <div class="game-features">
+                        <span class="feature-tag">IA Inteligente</span>
+                        <span class="feature-tag">Efectos 3D</span>
+                        <span class="feature-tag">Análisis</span>
+                    </div>
+                    <button class="btn btn-primary game-launch-btn">Jugar Ahora</button>
+                </div>
+                
+                <div class="game-card coming-soon">
+                    <div class="game-icon">🎯</div>
+                    <h3>Memory Game</h3>
+                    <p>Juego de memoria con cartas animadas y efectos de neón para mejorar la concentración.</p>
+                    <div class="game-features">
+                        <span class="feature-tag">Cartas animadas</span>
+                        <span class="feature-tag">Efectos neón</span>
+                        <span class="feature-tag">Dificultad progresiva</span>
+                    </div>
+                    <button class="btn btn-secondary" disabled>Próximamente</button>
+                </div>
+                
+                <div class="game-card coming-soon">
+                    <div class="game-icon">⚡</div>
+                    <h3>Reaction Game</h3>
+                    <p>Pon a prueba tus reflejos con este juego de reacción súper rápido y adictivo.</p>
+                    <div class="game-features">
+                        <span class="feature-tag">Reflejos rápidos</span>
+                        <span class="feature-tag">Puntuación global</span>
+                        <span class="feature-tag">Efectos de velocidad</span>
+                    </div>
+                    <button class="btn btn-secondary" disabled>Próximamente</button>
+                </div>
+                
+                <div class="game-card coming-soon">
+                    <div class="game-icon">🎲</div>
+                    <h3>Dice Game</h3>
+                    <p>Juegos de dados con efectos 3D y animaciones realistas para máxima diversión.</p>
+                    <div class="game-features">
+                        <span class="feature-tag">Efectos 3D</span>
+                        <span class="feature-tag">Múltiples juegos</span>
+                        <span class="feature-tag">Animaciones realistas</span>
+                    </div>
+                    <button class="btn btn-secondary" disabled>Próximamente</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- Snake Game Modal -->
+        <div id="snake-modal" class="game-modal hidden">
+            <div class="game-modal-content">
+                <div class="game-header">
+                    <h3>🐍 Snake Game</h3>
+                    <button class="close-game-btn">&times;</button>
+                </div>
+                <div class="snake-game-container">
+                    <div class="snake-info">
+                        <div class="score-display">
+                            <span class="score-label">Puntuación:</span>
+                            <span id="snake-score">0</span>
+                        </div>
+                        <div class="level-display">
+                            <span class="level-label">Nivel:</span>
+                            <span id="snake-level">1</span>
+                        </div>
+                        <div class="high-score-display">
+                            <span class="high-score-label">Mejor:</span>
+                            <span id="snake-high-score">0</span>
+                        </div>
+                        <div class="weather-display">
+                            <span class="weather-label">Clima:</span>
+                            <span id="snake-weather">☀️ Soleado</span>
+                        </div>
+                        <div class="game-status">
+                            <span id="snake-status">Presiona ESPACIO o Iniciar para empezar</span>
+                        </div>
+                    </div>
+                    <div class="snake-canvas-container">
+                        <canvas id="snake-canvas" width="400" height="400"></canvas>
+                    </div>
+                    <div class="snake-controls">
+                        <button id="snake-start-btn" class="btn btn-primary">Iniciar Juego</button>
+                        <button id="snake-pause-btn" class="btn btn-secondary" disabled>Pausar</button>
+                        <button id="snake-reset-btn" class="btn btn-secondary">Reiniciar</button>
+                    </div>
+                    <div class="snake-instructions">
+                        <p>🎮 Usa WASD o las flechas para mover la serpiente</p>
+                        <p>🍎 Come la comida para crecer y sumar puntos</p>
+                        <p>⚠️ No te muerdas a ti mismo ni toques las paredes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chess Game Modal -->
+        <div id="chess-modal" class="game-modal hidden">
+            <div class="game-modal-content">
+                <div class="game-header">
+                    <h3>♟️ Chess Game</h3>
+                    <button class="close-game-btn">&times;</button>
+                </div>
+                <div class="chess-game-container">
+                    <div class="chess-info">
+                        <div class="game-mode">
+                            <span class="mode-label">Modo:</span>
+                            <span id="chess-mode">Jugador vs IA</span>
+                        </div>
+                        <div class="turn-display">
+                            <span class="turn-label">Turno:</span>
+                            <span id="chess-turn">Blancas</span>
+                        </div>
+                        <div class="game-status">
+                            <span id="chess-status">Selecciona una pieza para comenzar</span>
+                        </div>
+                    </div>
+                    <div class="chess-board-container">
+                        <div class="chess-board" id="chess-board">
+                            <!-- Chess board will be generated by JavaScript -->
+                        </div>
+                    </div>
+                        <div class="chess-controls">
+                            <button id="chess-new-game" class="btn btn-primary">Nueva Partida</button>
+                            <button id="chess-undo" class="btn btn-secondary" disabled>Deshacer</button>
+                            <button id="chess-hint" class="btn btn-secondary">Pista</button>
+                            <button id="chess-analyze" class="btn btn-secondary">Analizar</button>
+                        </div>
+                        <div class="chess-difficulty">
+                            <label for="ai-difficulty" class="difficulty-label">Dificultad IA (ELO):</label>
+                            <div class="difficulty-container">
+                                <input type="range" id="ai-difficulty" min="200" max="2000" value="800" step="100" class="difficulty-slider">
+                                <span id="ai-elo-display" class="elo-display">800 ELO</span>
+                            </div>
+                            <div class="difficulty-levels">
+                                <span class="level-label">Principiante</span>
+                                <span class="level-label">Intermedio</span>
+                                <span class="level-label">Avanzado</span>
+                                <span class="level-label">Maestro</span>
+                            </div>
+                        </div>
+                    <div class="chess-instructions">
+                        <p>♟️ Haz clic en una pieza para seleccionarla, luego en una casilla para mover</p>
+                        <p>🤖 La IA juega con las piezas negras automáticamente</p>
+                        <p>💡 Usa "Pista" para ver movimientos sugeridos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Paint Game Modal -->
+        <div id="paint-modal" class="game-modal hidden">
+        <div class="game-modal-content">
+            <div class="game-header">
+                <h3>🎨 Paint Digital</h3>
+                <button class="close-game-btn">&times;</button>
+            </div>
+            <div class="paint-toolbar">
+                <div class="tool-group">
+                    <label>Herramientas:</label>
+                    <button id="brush-tool" class="tool-btn active" data-tool="brush">🖌️ Pincel</button>
+                    <button id="eraser-tool" class="tool-btn" data-tool="eraser">🧽 Borrador</button>
+                    <button id="shape-tool" class="tool-btn" data-tool="shape">🔷 Formas</button>
+                    <button id="text-tool" class="tool-btn" data-tool="text">📝 Texto</button>
+                </div>
+                <div class="tool-group">
+                    <label>Tipo:</label>
+                    <select id="brush-type">
+                        <option value="round">Redondo</option>
+                        <option value="square">Cuadrado</option>
+                        <option value="spray">Spray</option>
+                        <option value="marker">Marcador</option>
+                    </select>
+                </div>
+                <div class="tool-group" id="shape-selector" style="display: none;">
+                    <label>Forma:</label>
+                    <select id="shape-type">
+                        <option value="rectangle">Rectángulo</option>
+                        <option value="circle">Círculo</option>
+                        <option value="line">Línea</option>
+                    </select>
+                </div>
+                <div class="tool-group">
+                    <label>Tamaño:</label>
+                    <input type="range" id="brush-size" min="1" max="50" value="5">
+                    <span id="brush-size-value">5px</span>
+                </div>
+                <div class="tool-group">
+                    <label>Color:</label>
+                    <input type="color" id="brush-color" value="#00ffff">
+                </div>
+                <div class="tool-group">
+                    <label>Canvas:</label>
+                    <select id="canvas-size">
+                        <option value="800x600">800x600</option>
+                        <option value="1024x768">1024x768</option>
+                        <option value="1280x720">1280x720</option>
+                        <option value="1920x1080">1920x1080</option>
+                    </select>
+                </div>
+                <div class="tool-group">
+                    <button id="undo-shape" class="btn btn-secondary">↶ Deshacer</button>
+                    <button id="clear-canvas" class="btn btn-secondary">Limpiar</button>
+                    <button id="save-canvas" class="btn btn-primary">Guardar</button>
+                </div>
+                <div class="tool-group">
+                    <span id="shape-counter" class="shape-counter">Formas: 0</span>
+                </div>
+            </div>
+            <div class="paint-canvas-container">
+                <canvas id="paint-canvas" width="800" height="600"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Riviix. Todos los derechos reservados. | <a href="index.html">Volver al Inicio</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
